@@ -615,8 +615,7 @@ class KrakenAPI(object):
             ohlc["dtime"] = pd.to_datetime(ohlc.time, unit="s")
             ohlc.sort_values("dtime", ascending=ascending, inplace=True)
             ohlc.set_index("dtime", inplace=True)
-            print(f"wtf interval: {interval} and stringified: {str(interval)}")
-            ohlc.index.freq = "1T"  # str(interval) + "T"
+            # ohlc.index.freq = str(interval) + "T"
 
             # dtypes
             for col in ["open", "high", "low", "close", "vwap", "volume"]:
