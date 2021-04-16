@@ -1,2 +1,2 @@
-krakenex>=2.0.0
+git+https://git@github.com/myclues/python3-krakenex-20210416.git>=2.0.0
 pandas
